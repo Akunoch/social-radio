@@ -1,0 +1,62 @@
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">Social Radio</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+		<li><a ui-sref="myaccount" style="padding-left:800px;color:#ffffff;">{{prenom}} {{nom}}</a></li>
+	</ul>
+</nav>
+
+<div class="row">
+	<div class="col-md-12">
+		<center>
+		    <h1> Welcome to the Social Radio !</h1>
+		</center>
+	</div>	
+</div>	
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="infocontainer" >	
+			<div class="textcontainer">
+			Auteur : {{autor}}
+			</div>	
+			<div class="textcontainer">
+			Title : {{title}}
+			</div>	
+			<div class="textcontainer">
+			Commentaire : {{comment}}
+			</div>
+			<div class="textcontainer">
+			{{likes.length}} Likes
+			</div>			
+		</div> 	
+	</div> 
+
+	<div class="col-md-6">
+		<div class="playercontainer" id="ytplayer" style="text-align:center">
+			<youtube-video video-id="videoId" player-vars="playerVars"></youtube-video>
+			<my-Youtubeplayer videoid="videoId"></my-Youtubeplayer>
+		</div>
+	</div>	
+
+	<div class="col-md-3">
+		<div class="inputcontainer">		
+		<form>
+  			<div class="form-group" style="margin-top:20%;margin-left:5%;margin-right:5%;">
+    			<input type="text" class="input-class" id="InputComment" placeholder="Comment !" >
+  			</div>
+  		</form>	
+  		<div class="upbuttoncontainer" style="margin-top:20%">
+			<button class="btn btn-default" ng-click="LikesUp()" ng-disabled="likes.indexOf('Aurélien Pacard') > -1" style="background-color:#31B404">Up it !</button>
+		</div>
+
+		</div>
+	</div>		
+</div>
+<div class="fb-like" data-share="true" data-width="450" data-show-faces="true" style="margin-top:3%"></div>
+
+

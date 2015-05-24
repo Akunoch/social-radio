@@ -1,0 +1,45 @@
+.playercontainer{
+	margin-top: 10%;
+}
+
+.infocontainer{
+	margin-top: 35%;
+	margin-right: 5%;
+	margin-left: 10%;
+	text-align: center;
+	border: solid 1px black;
+	height : 300px;
+}
+
+.upbuttoncontainer{
+	margin-top: 10%;
+	text-align: center;
+}
+
+.textcontainer{
+	margin-top: 15%;
+}
+
+.inputcontainer{
+	margin-top: 35%;
+	margin-right: 5%;
+	margin-left: 10%;
+	text-align: center;
+	border: solid 1px black;
+	height : 300px;
+}
+
+
+.form-group input[type="text"] {
+   height: 20px;
+   font-size: 14px;
+   line-height: 20px;
+   width:95%;
+}
+
+@font-face{
+	font-family:'Eskis';
+	src:url('Eskis.ttf');
+}
+
+
